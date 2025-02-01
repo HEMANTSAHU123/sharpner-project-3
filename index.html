@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body style="margin: 0">
+ 
+<form  onsubmit="handlesearch(event)">
+  <h4>total password</h4>
+    <input type="text" placeholder="search" name="search" id="search">
+   <button type="submit">Search</button>
+</form>
+
+  <form onsubmit="handleFormSubmit(event)">
+    <h3>password keeper</h3>
+    
+    <label for="search">title</label>
+    <input type="text" name="title" id="title"  required/>
+    <label for="password">password</label>
+    <input type="text" name="password" id="password"  required/>
+     <button type="submit" id="button">Additem</button>
+  </form>
+  <ul></ul>
+ 
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+
+</html>
